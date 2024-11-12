@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Card</title>
+</head>
+<body>
+  <div class="product-card">
+    <div class="card-header">
+      <img src="shoe.jpg" alt="Nike Running Shoe" class="product-image">
+      <div class="like-button" onclick="toggleLike(this)">
+        <span>&#9829;</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="product-title">Nike Running Shoe</h3>
+      <div class="product-tags">
+        <span class="tag">EU38</span>
+        <span class="tag">BLACK/WHITE</span>
+      </div>
+      <p class="product-description">
+        Crossing hardwood comfort with off-court flair. '80s-inspired construction, bold details and nothin'-but-net style.
+      </p>
+      <div class="product-footer">
+        <div class="product-price">$69.99</div>
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script>
+    function toggleLike(element) {
+  element.classList.toggle("liked");
+}
+
+</script>
